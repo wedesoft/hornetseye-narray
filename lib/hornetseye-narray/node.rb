@@ -39,8 +39,8 @@ module Hornetseye
       if target == NArray::OBJECT
         NArray.to_na to_a
       else
-        str = memory.read memory.size
-        NArray.to_na str, target, *shape
+        data = memorise.memory
+        NArray.to_na data.read( data.size ), target, *shape
       end
     end
 
