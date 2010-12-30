@@ -89,7 +89,7 @@ begin
     s.extra_rdoc_files = []
     s.rdoc_options = %w{--no-private}
     s.add_dependency %q<narray>, [ '~> 0.5' ]
-    s.add_dependency %q<malloc>, [ '~> 1.1' ]
+    s.add_dependency %q<malloc>, [ '~> 1.4' ]
     s.add_dependency %q<multiarray>, [ '~> 0.15' ]
     s.add_development_dependency %q{rake}
   end
@@ -112,7 +112,7 @@ begin
     s.extra_rdoc_files = []
     s.rdoc_options = %w{--no-private}
     s.add_dependency %q<narray>, [ '~> 0.5' ]
-    s.add_dependency %q<malloc>, [ '~> 1.1' ]
+    s.add_dependency %q<malloc>, [ '~> 1.4' ]
     s.add_dependency %q<multiarray>, [ '~> 0.15' ]
   end
   GEM_BINARY = "#{PKG_NAME}-#{PKG_VERSION}-#{$BINSPEC.platform}.gem"
