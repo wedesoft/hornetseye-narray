@@ -40,7 +40,7 @@ module Hornetseye
         NArray.to_na to_a
       else
         data = memorise.memory
-        NArray.to_na data.read( data.size ), target, *shape
+        NArray.to_na memorise.memory.export, target, *shape
       end
     end
 
