@@ -6,7 +6,7 @@ require 'rake/packagetask'
 require 'rbconfig'
 
 PKG_NAME = 'hornetseye-narray'
-PKG_VERSION = '0.3.0'
+PKG_VERSION = '1.0.0'
 RB_FILES = FileList[ 'lib/**/*.rb' ]
 TC_FILES = FileList[ 'test/tc_*.rb' ]
 TS_FILES = FileList[ 'test/ts_*.rb' ]
@@ -87,9 +87,9 @@ begin
     s.has_rdoc = 'yard'
     s.extra_rdoc_files = []
     s.rdoc_options = %w{--no-private}
-    s.add_dependency %q<narray>, [ '~> 0.5' ]
-    s.add_dependency %q<malloc>, [ '~> 1.4' ]
-    s.add_dependency %q<multiarray>, [ '~> 0.23' ]
+    s.add_dependency %<narray>, [ '~> 0.5' ]
+    s.add_dependency %<malloc>, [ '~> 1.4' ]
+    s.add_dependency %<multiarray>, [ '~> 1.0' ]
     s.add_development_dependency %q{rake}
   end
   GEM_SOURCE = "#{PKG_NAME}-#{PKG_VERSION}.gem"
@@ -110,9 +110,9 @@ begin
     s.has_rdoc = 'yard'
     s.extra_rdoc_files = []
     s.rdoc_options = %w{--no-private}
-    s.add_dependency %q<narray>, [ '~> 0.5' ]
-    s.add_dependency %q<malloc>, [ '~> 1.4' ]
-    s.add_dependency %q<multiarray>, [ '~> 0.23' ]
+    s.add_dependency %<narray>, [ '~> 0.5' ]
+    s.add_dependency %<malloc>, [ '~> 1.4' ]
+    s.add_dependency %<multiarray>, [ '~> 1.0' ]
   end
   GEM_BINARY = "#{PKG_NAME}-#{PKG_VERSION}-#{$BINSPEC.platform}.gem"
   desc "Build the gem file #{GEM_SOURCE}"
