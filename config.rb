@@ -1,7 +1,7 @@
 require 'rake'
 
 PKG_NAME = 'hornetseye-narray'
-PKG_VERSION = '1.0.2'
+PKG_VERSION = '1.0.3'
 RB_FILES = ['config.rb'] + FileList[ 'lib/**/*.rb' ]
 TC_FILES = FileList[ 'test/tc_*.rb' ]
 TS_FILES = FileList[ 'test/ts_*.rb' ]
